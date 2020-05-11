@@ -32,4 +32,4 @@ async def on_message(message):
             print("CHUNGUS DETECTED")
 
 
-client.run('NzA5MTQxNjE0MjY5OTU2MTQ3.XrmoLQ.i5JSO3mJ4CVtbNT9M4Z3xZd8uyc')
+client.run('Token')
