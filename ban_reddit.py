@@ -15,4 +15,4 @@ async def on_message(message):
     	await message.delete()
     	print('REDDIT DETECTED')
 
-client.run('NzA5MTQxNjE0MjY5OTU2MTQ3.Xrhm1A.kHdGk28feUYTHBGkQpj8X7ZhWB0')
+client.run('token')
