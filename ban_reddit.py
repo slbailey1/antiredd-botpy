@@ -18,18 +18,18 @@ async def on_message(message):
     seq = SequenceMatcher(a=hate, b=msglower)
     seq2 = SequenceMatcher(a=hate2, b=msglower)
     
-    print(seq.ratio())
-    print(seq2.ratio())
+    print('Reddit ratio :', seq.ratio())
+    print('Chungus ratio :', seq2.ratio())
     print(message.author,":", message.content)
     if 'reddit.com' in msglower or 'redd.it' in msglower:
     	print("CLOSE CALL")
     	return
-    if seq.ratio() >= 0.7000000:
+    elif seq.ratio() >= 0.7000000: # reddit
     	await message.delete()
     	print("REDDIT DETECTED")
-    if seq2.ratio() >= 0.7000000:
+    elif seq2.ratio() >= 0.7000000: # chungus
             await message.delete()
-            print("REDDIT DETECTED")
+            print("CHUNGUS DETECTED")
 
 
-client.run('token-here')
+client.run('NzA5MTQxNjE0MjY5OTU2MTQ3.XrmoLQ.i5JSO3mJ4CVtbNT9M4Z3xZd8uyc')
