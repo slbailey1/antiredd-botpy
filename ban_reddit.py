@@ -1,6 +1,5 @@
 import discord
 from difflib import SequenceMatcher, get_close_matches
-
 client = discord.Client()
 
 hate = 'reddit'
@@ -9,6 +8,8 @@ hate2 = 'chungus'
 @client.event
 async def on_ready():
     print("Working.")
+    activity = discord.Game(name='I HATE REDDIT >:(')
+    await client.change_presence(status=discord.Status.dnd, activity=activity)
 
 @client.event
 async def on_message(message):
@@ -32,4 +33,4 @@ async def on_message(message):
             print("CHUNGUS DETECTED")
 
 
-client.run('Token')
+client.run('TOKEN')
