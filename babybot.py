@@ -16,7 +16,7 @@ async def on_message(message):
 
     
     msglower = message.content.lower()
-    channel = client.get_channel(683509801984196826)
+    channel = client.get_channel(channel ID here)
     
     
     print(message.author,":", msglower)
